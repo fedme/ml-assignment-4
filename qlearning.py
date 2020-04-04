@@ -40,6 +40,12 @@ def q_learning(env, alpha, gamma, epsilon, episodes):
 
             next_state, reward, done, info = env.step(action)
 
+            # Reward adjustments
+            if done is True and reward == 0:
+                reward = -0.1
+
+            reward -= 0.001  # cost of life
+
             old_value = q_table[state, action]
             next_max = np.max(q_table[next_state])
 
@@ -52,7 +58,7 @@ def q_learning(env, alpha, gamma, epsilon, episodes):
             state = next_state
             epochs += 1
 
-        if i % 100 == 0:
+        if i % 10000 == 0:
             print(f"Episode: {i}")
     # Start with a random policy
     policy = np.ones([env.nS, env.nA]) / env.nA
