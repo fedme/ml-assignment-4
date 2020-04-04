@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27986bf2-7149-4bd3-9a77-db549e8a7293" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/value_iteration.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithms.py" beforeDir="false" afterPath="$PROJECT_DIR$/policy_iteration.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frozen_lake.py" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -172,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586017892968</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Analyze Qlearning for map_p=0.9">
+      <created>1586024990003</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586024990003</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -190,7 +199,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Collect stats on qlearning" />
-    <option name="LAST_COMMIT_MESSAGE" value="Collect stats on qlearning" />
+    <MESSAGE value="Analyze Qlearning for map_p=0.9" />
+    <option name="LAST_COMMIT_MESSAGE" value="Analyze Qlearning for map_p=0.9" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -204,11 +214,6 @@
           <url>file://$PROJECT_DIR$/frozen_lake.py</url>
           <line>70</line>
           <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/frozen_lake.py</url>
-          <line>120</line>
-          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

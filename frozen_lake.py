@@ -2,8 +2,10 @@ import json
 import numpy as np
 from gym.envs.toy_text.frozen_lake import generate_random_map, FrozenLakeEnv
 from timeit import default_timer as timer
-import algorithms
-import qlearning
+
+from policy_iteration import policy_improvement
+from qlearning import q_learning
+from value_iteration import value_iteration
 
 
 # TODO: plot different map sizes vs max_val (or other stats)
@@ -12,6 +14,7 @@ import qlearning
 # TODO: plot policies
 # TODO: plot max values vs n_iteration for every algorithm
 # TODO: plot algorithms vs random choice
+
 
 MAP_SIZES = [4, 8, 12, 16, 20, 24, 28, 32]
 
@@ -34,7 +37,7 @@ def find_good_maps(map_p=0.8):
             np.random.seed(seed)
             map = generate_random_map(size=size, p=map_p)
             env = FrozenLakeEnv(desc=map)
-            optimal_policy, optimal_value_function = algorithms.value_iteration(env, theta=0.0000001, discount_factor=0.999)
+            optimal_policy, optimal_value_function = value_iteration(env, theta=0.0000001, discount_factor=0.999)
             optimal_policy_flat = np.where(optimal_policy == 1)[1]
             mean_number_of_steps, lost_games_perc = score_frozen_lake(env, optimal_policy_flat)
             if lost_games_perc < smallest_lost_games_perc:
@@ -104,7 +107,7 @@ def print_score(mean_number_of_steps, lost_games_perc):
 ########################################
 
 def run_qlearning(env, alpha=0.8, gamma=0.9999, epsilon=0.1, episodes=10000):
-    optimal_policy, optimal_q_table = qlearning.q_learning(env, alpha=alpha, gamma=gamma, epsilon=epsilon, episodes=episodes)
+    optimal_policy, optimal_q_table = q_learning(env, alpha=alpha, gamma=gamma, epsilon=epsilon, episodes=episodes)
     optimal_policy_flat = np.where(optimal_policy == 1)[1]
     return optimal_policy_flat
 
@@ -144,14 +147,42 @@ def analyze_qlearning(map_p=0.8):
 # Value Iteration
 ########################################
 
-def try_value_iteration(lake_map):
-    print('Trying frozen lake with Value Iteration')
-    env = FrozenLakeEnv(desc=lake_map)
-    optimal_policy, optimal_value_function = algorithms.value_iteration(env, theta=0.0000001, discount_factor=0.999)
+def run_value_iteration(env, theta=0.0000001, discount_factor=0.999, max_iters=1000):
+    optimal_policy, optimal_value_function, converged = value_iteration(env, theta=theta, discount_factor=discount_factor, max_iters=max_iters)
     optimal_policy_flat = np.where(optimal_policy == 1)[1]
-    # optimal_policy_reshaped = optimal_policy_flat.reshape(4, 4)
+    return optimal_policy_flat, converged
 
-    score_frozen_lake(env, optimal_policy_flat)
+
+def analyze_value_iteration(map_p=0.8):
+    maps = load_maps(map_p=map_p)
+
+    map_sizes = MAP_SIZES
+    max_iters_values = [100, 300, 500, 700, 800, 1000, 1200, 1400, 1600, 1800, 2000, 2500, 3000, 3500, 4000, 4500, 5000]
+    results = []
+
+    for map_size in map_sizes:
+        map = get_map(maps, map_size=map_size)
+        for max_iters in max_iters_values:
+            print('########################################')
+            print(f'Running value iteration for map_size={map_size} and max_iters={max_iters}...')
+            env = create_env(map)
+            start = timer()
+            policy, converged = run_value_iteration(env, max_iters=max_iters)
+            end = timer()
+            mean_number_of_steps, lost_games_perc = score_frozen_lake(env, policy)
+            results.append({
+                'map_p': map_p,
+                'map_size': map_size,
+                'max_iters': max_iters,
+                'converged': converged,
+                'mean_number_of_steps': mean_number_of_steps,
+                'lost_games_perc': lost_games_perc,
+                'time': end - start
+            })
+
+    with open(f'value_iteration_stats_{map_p}.json', "wb") as f:
+        f.write(json.dumps(results).encode("utf-8"))
+    return results
 
 
 ########################################
@@ -161,7 +192,7 @@ def try_value_iteration(lake_map):
 def try_policy_iteration(lake_map):
     print('Trying frozen lake with Policy Iteration')
     env = FrozenLakeEnv(desc=lake_map)
-    optimal_policy, optimal_value_function = algorithms.policy_improvement(env, discount_factor=0.9999)
+    optimal_policy, optimal_value_function = policy_improvement(env, discount_factor=0.9999)
     optimal_policy_flat = np.where(optimal_policy == 1)[1]
     # optimal_policy_reshaped = optimal_policy_flat.reshape(4, 4)
 
@@ -171,6 +202,8 @@ def try_policy_iteration(lake_map):
 if __name__ == '__main__':
     #find_good_maps(map_p=0.95)
 
-    analyze_qlearning(map_p=0.9)
+    #analyze_qlearning(map_p=0.9)
+
+    analyze_value_iteration(map_p=0.8)
 
     print()
