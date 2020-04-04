@@ -42,7 +42,7 @@ def policy_eval(policy, env, discount_factor=1.0, theta=0.00001):
     return np.array(V)
 
 
-def policy_improvement(env, policy_eval_fn=policy_eval, discount_factor=1.0):
+def policy_improvement(env, policy_eval_fn=policy_eval, discount_factor=1.0, max_iters=1000):
     """
     Policy Improvement Algorithm. Iteratively evaluates and improves a policy
     until an optimal policy is found.
@@ -52,6 +52,7 @@ def policy_improvement(env, policy_eval_fn=policy_eval, discount_factor=1.0):
         policy_eval_fn: Policy Evaluation function that takes 3 arguments:
             policy, env, discount_factor.
         discount_factor: gamma discount factor.
+        max_iters: maximum number of iterations.
 
     Returns:
         A tuple (policy, V).
@@ -79,9 +80,10 @@ def policy_improvement(env, policy_eval_fn=policy_eval, discount_factor=1.0):
         return A
 
     # Start with a random policy
+    converged = False
     policy = np.ones([env.nS, env.nA]) / env.nA
 
-    while True:
+    for i in range(max_iters):
         # Evaluate the current policy
         V = policy_eval_fn(policy, env, discount_factor)
 
@@ -105,4 +107,7 @@ def policy_improvement(env, policy_eval_fn=policy_eval, discount_factor=1.0):
 
         # If the policy is stable we've found an optimal policy. Return it
         if policy_stable:
-            return policy, V
+            converged = True
+            break
+
+    return policy, V, converged
