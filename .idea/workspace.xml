@@ -1,9 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27986bf2-7149-4bd3-9a77-db549e8a7293" name="Default Changelist" comment="">
+    <list default="true" id="27986bf2-7149-4bd3-9a77-db549e8a7293" name="Default Changelist" comment="Draw policies">
+      <change afterPath="$PROJECT_DIR$/plots/policies/frozenlake_policy_iteration_32x32_p0.8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/policies/frozenlake_policy_iteration_8x8_p0.8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/policies/frozenlake_qlearning_32x32_p0.8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/policies/frozenlake_qlearning_8x8_p0.8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/policies/frozenlake_value_iteration_32x32_p0.8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/policies/frozenlake_value_iteration_8x8_p0.8.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frozen_lake_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/maps/frozenlake_map_12x12_p0.8.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/maps/frozenlake_map_12x12_p0.8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/maps/frozenlake_map_12x12_p0.9.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/maps/frozenlake_map_12x12_p0.9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/maps/frozenlake_map_16x16_p0.8.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/maps/frozenlake_map_16x16_p0.8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/maps/frozenlake_map_16x16_p0.9.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/maps/frozenlake_map_16x16_p0.9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/maps/frozenlake_map_20x20_p0.8.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/maps/frozenlake_map_20x20_p0.8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/maps/frozenlake_map_20x20_p0.9.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/maps/frozenlake_map_20x20_p0.9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/maps/frozenlake_map_24x24_p0.8.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/maps/frozenlake_map_24x24_p0.8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/maps/frozenlake_map_24x24_p0.9.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/maps/frozenlake_map_24x24_p0.9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/maps/frozenlake_map_28x28_p0.8.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/maps/frozenlake_map_28x28_p0.8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/maps/frozenlake_map_28x28_p0.9.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/maps/frozenlake_map_28x28_p0.9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/maps/frozenlake_map_32x32_p0.8.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/maps/frozenlake_map_32x32_p0.8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/maps/frozenlake_map_32x32_p0.9.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/maps/frozenlake_map_32x32_p0.9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/maps/frozenlake_map_4x4_p0.8.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/maps/frozenlake_map_4x4_p0.8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/maps/frozenlake_map_4x4_p0.9.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/maps/frozenlake_map_4x4_p0.9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/maps/frozenlake_map_8x8_p0.8.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/maps/frozenlake_map_8x8_p0.8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/maps/frozenlake_map_8x8_p0.9.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/maps/frozenlake_map_8x8_p0.9.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +44,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ZuHHHsIGV4vG4fHPmOZcYxxtXh" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
@@ -214,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586095928130</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Draw policies">
+      <created>1586117441266</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1586117441266</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -231,6 +263,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Collect stats on qlearning" />
     <MESSAGE value="Analyze Qlearning for map_p=0.9" />
     <MESSAGE value="Analyze value iteration for map_p=0.8" />
@@ -238,16 +271,12 @@
     <MESSAGE value="Collected stats for policy iteration" />
     <MESSAGE value="Plotted for map_p=0.9" />
     <MESSAGE value="Draw maps" />
-    <option name="LAST_COMMIT_MESSAGE" value="Draw maps" />
+    <MESSAGE value="Draw policies" />
+    <option name="LAST_COMMIT_MESSAGE" value="Draw policies" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/frozen_lake_analysis.py</url>
-          <line>242</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$USER_HOME$/Anaconda3/envs/ml-assignment-4/Lib/site-packages/matplotlib/collections.py</url>
           <line>1824</line>

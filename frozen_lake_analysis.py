@@ -5,7 +5,8 @@ from gym.envs.toy_text.frozen_lake import UP, RIGHT, DOWN, LEFT
 from matplotlib import colors
 from matplotlib.collections import PatchCollection
 
-from frozen_lake import load_maps, get_map, MAP_SIZES, create_env, run_policy_iteration, run_value_iteration
+from frozen_lake import load_maps, get_map, MAP_SIZES, create_env, run_policy_iteration, run_value_iteration, \
+    run_qlearning
 import matplotlib.patches as mpatches
 
 
@@ -158,11 +159,14 @@ def draw_map(map_p=0.8, map_size=32):
 
     map_2d = [to_scalar_list(x) for x in [list(row) for row in map]]
 
+    fig, ax = plt.subplots(figsize=(15, 15))
     cmap = colors.ListedColormap(['green', 'lightblue', 'darkblue', 'red'])
     plt.pcolor(map_2d, edgecolors='k', cmap=cmap)
     plt.title(f'Frozen Lake map ({map_size}x{map_size}, p={map_p})')
     plt.xticks([])
     plt.yticks([])
+    plt.gca().invert_yaxis()
+    plt.tight_layout()
     plt.savefig(f'plots/maps/frozenlake_map_{map_size}x{map_size}_p{map_p}.png')
     plt.clf()
 
@@ -172,19 +176,19 @@ def draw_all_maps(map_p=0.8):
         draw_map(map_p, map_size)
 
 
-def draw_policies(map_p=0.8, map_size=32):
+def draw_policy(algo='value_iteration', map_p=0.8, map_size=8):
     maps = load_maps(map_p=map_p)
     map = get_map(maps, map_size=map_size)
     env = create_env(map)
 
-    valueit_policy, _ = run_value_iteration(env, max_iters=5000)
-
-    valueit_policy_symbols = valueit_policy.astype('object')
-    valueit_policy_symbols[valueit_policy == UP] = '🠙'
-    valueit_policy_symbols[valueit_policy == RIGHT] = '🠚'
-    valueit_policy_symbols[valueit_policy == DOWN] = '🠛'
-    valueit_policy_symbols[valueit_policy == LEFT] = '🠘'
-    valueit_policy_symbols = np.resize(valueit_policy_symbols, (map_size, map_size))
+    # Get policy
+    policy = None
+    if algo == 'value_iteration':
+        policy, _ = run_value_iteration(env, max_iters=5000)
+    if algo == 'policy_iteration':
+        policy, _, _ = run_policy_iteration(env, max_iters=5000)
+    if algo == 'qlearning':
+        policy = run_qlearning(env, episodes=200000)
 
     # Draw Policy
     def arrow_down(x, y, arrow_size=0.6):
@@ -199,12 +203,12 @@ def draw_policies(map_p=0.8, map_size=32):
     def arrow_left(x, y, arrow_size=0.6):
         return mpatches.Arrow(x + arrow_size + 0.2, y + 0.5, -arrow_size, 0)
 
-    valueit_policy_2d = np.resize(valueit_policy, (map_size, map_size))
-    valueit_policy_2d_list = list(valueit_policy_2d.tolist())
+    policy_2d = np.resize(policy, (map_size, map_size))
+    policy_2d_list = list(policy_2d.tolist())
     patches = []
-    for row in range(len(valueit_policy_2d_list)):
-        for col in range(len(valueit_policy_2d_list[0])):
-            action = valueit_policy_2d_list[row][col]
+    for row in range(len(policy_2d_list)):
+        for col in range(len(policy_2d_list[0])):
+            action = policy_2d_list[row][col]
             arrow = None
             if action == UP:
                 arrow = arrow_up(col, row)
@@ -229,19 +233,18 @@ def draw_policies(map_p=0.8, map_size=32):
 
     map_2d = [to_scalar_list(x) for x in [list(row) for row in map]]
 
-    fig, ax = plt.subplots()
+    fig, ax = plt.subplots(figsize=(15,15))
     cmap = colors.ListedColormap(['green', 'lightblue', 'darkblue', 'red'])
     ax.pcolor(map_2d, edgecolors='k', cmap=cmap)
-    plt.title(f'Frozen Lake map ({map_size}x{map_size}, p={map_p})')
+    plt.title(f'Policy found by {algo} on Frozen Lake ({map_size}x{map_size} map, p={map_p})')
     plt.xticks([])
     plt.yticks([])
     collection = PatchCollection(patches, color='white')
     ax.add_collection(collection)
     plt.gca().invert_yaxis()
-    plt.show()
-
-    print()
-
+    plt.tight_layout()
+    plt.savefig(f'plots/policies/frozenlake_{algo}_{map_size}x{map_size}_p{map_p}.png')
+    plt.clf()
 
 
 if __name__ == '__main__':
@@ -249,7 +252,7 @@ if __name__ == '__main__':
     # mapsize_vs_iterations(map_p=0.8)
     # mapsize_vs_nsteps(map_p=0.8)
     # mapsize_vs_traintime(map_p=0.8)
-    #
+
     # mapsize_vs_gameswon(map_p=0.9)
     # mapsize_vs_iterations(map_p=0.9)
     # mapsize_vs_nsteps(map_p=0.9)
@@ -258,4 +261,10 @@ if __name__ == '__main__':
     # draw_all_maps(map_p=0.8)
     # draw_all_maps(map_p=0.9)
 
-    draw_policies(map_p=0.8, map_size=32)
+    # draw_policy(algo='value_iteration', map_p=0.8, map_size=32)
+    # draw_policy(algo='policy_iteration', map_p=0.8, map_size=32)
+    # draw_policy(algo='qlearning', map_p=0.8, map_size=32)
+
+    draw_policy(algo='value_iteration', map_p=0.8, map_size=8)
+    draw_policy(algo='policy_iteration', map_p=0.8, map_size=8)
+    draw_policy(algo='qlearning', map_p=0.8, map_size=8)
