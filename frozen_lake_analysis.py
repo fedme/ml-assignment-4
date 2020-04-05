@@ -1,8 +1,9 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+from matplotlib import colors
+from frozen_lake import load_maps, get_map, MAP_SIZES
 
 
-# TODO: plot maps
 # TODO: plot policies
 
 
@@ -28,8 +29,6 @@ def mapsize_vs_gameswon(map_p=0.8):
 
 
 def mapsize_vs_iterations(map_p=0.8):
-    # TODO: plot qlearning in separate plot
-
     qlearning = pd.read_json(f'qlearning_stats_{map_p}.json')
     valueit = pd.read_json(f'value_iteration_stats_{map_p}.json')
     policyit = pd.read_json(f'policy_iteration_stats_{map_p}.json')
@@ -139,13 +138,45 @@ def mapsize_vs_traintime(map_p=0.8):
     print()
 
 
-if __name__ == '__main__':
-    mapsize_vs_gameswon(map_p=0.8)
-    mapsize_vs_iterations(map_p=0.8)
-    mapsize_vs_nsteps(map_p=0.8)
-    mapsize_vs_traintime(map_p=0.8)
+def draw_map(map_p=0.8, map_size=32):
+    maps = load_maps(map_p=map_p)
+    map = get_map(maps, map_size=map_size)
 
-    mapsize_vs_gameswon(map_p=0.9)
-    mapsize_vs_iterations(map_p=0.9)
-    mapsize_vs_nsteps(map_p=0.9)
-    mapsize_vs_traintime(map_p=0.9)
+    def to_scalar(x):
+        if x == 'S': return 0
+        if x == 'F': return 1
+        if x == 'H': return 2
+        if x == 'G': return 3
+
+    def to_scalar_list(row):
+        return [to_scalar(elem) for elem in row]
+
+    map_2d = [to_scalar_list(x) for x in [list(row) for row in map]]
+
+    cmap = colors.ListedColormap(['green', 'lightblue', 'darkblue', 'red'])
+    plt.pcolor(map_2d, edgecolors='k', cmap=cmap)
+    plt.title(f'Frozen Lake map ({map_size}x{map_size}, p={map_p})')
+    plt.xticks([])
+    plt.yticks([])
+    plt.savefig(f'plots/maps/frozenlake_map_{map_size}x{map_size}_p{map_p}.png')
+    plt.clf()
+
+
+def draw_all_maps(map_p=0.8):
+    for map_size in MAP_SIZES:
+        draw_map(map_p, map_size)
+
+
+if __name__ == '__main__':
+    # mapsize_vs_gameswon(map_p=0.8)
+    # mapsize_vs_iterations(map_p=0.8)
+    # mapsize_vs_nsteps(map_p=0.8)
+    # mapsize_vs_traintime(map_p=0.8)
+    #
+    # mapsize_vs_gameswon(map_p=0.9)
+    # mapsize_vs_iterations(map_p=0.9)
+    # mapsize_vs_nsteps(map_p=0.9)
+    # mapsize_vs_traintime(map_p=0.9)
+
+    # draw_all_maps(map_p=0.8)
+    draw_all_maps(map_p=0.9)

@@ -2,13 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27986bf2-7149-4bd3-9a77-db549e8a7293" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/plots/maps/frozenlake_map_12x12_p0.8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/maps/frozenlake_map_12x12_p0.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/maps/frozenlake_map_16x16_p0.8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/maps/frozenlake_map_16x16_p0.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/maps/frozenlake_map_20x20_p0.8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/maps/frozenlake_map_20x20_p0.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/maps/frozenlake_map_24x24_p0.8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/maps/frozenlake_map_24x24_p0.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/maps/frozenlake_map_28x28_p0.8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/maps/frozenlake_map_28x28_p0.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/maps/frozenlake_map_32x32_p0.8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/maps/frozenlake_map_32x32_p0.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/maps/frozenlake_map_4x4_p0.8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/maps/frozenlake_map_4x4_p0.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/maps/frozenlake_map_8x8_p0.8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/maps/frozenlake_map_8x8_p0.9.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frozen_lake.py" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frozen_lake_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake_analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/frozenlake_mapsize_vs_gameswon_p0.8.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/frozenlake_mapsize_vs_gameswon_p0.8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/frozenlake_mapsize_vs_iterations_p0.8.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/frozenlake_mapsize_vs_iterations_p0.8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/frozenlake_mapsize_vs_nsteps_p0.8.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/frozenlake_mapsize_vs_nsteps_p0.8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/frozenlake_mapsize_vs_traintime_p0.8.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/frozenlake_mapsize_vs_traintime_p0.8.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -205,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586069380404</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Plotted for map_p=0.9">
+      <created>1586074610413</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1586074610413</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -227,22 +245,7 @@
     <MESSAGE value="Analyze value iteration for map_p=0.8" />
     <MESSAGE value="Done some plots" />
     <MESSAGE value="Collected stats for policy iteration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Collected stats for policy iteration" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/frozen_lake_analysis.py</url>
-          <line>80</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/frozen_lake_analysis.py</url>
-          <line>114</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Plotted for map_p=0.9" />
+    <option name="LAST_COMMIT_MESSAGE" value="Plotted for map_p=0.9" />
   </component>
 </project>
