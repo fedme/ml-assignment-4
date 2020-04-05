@@ -5,7 +5,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frozen_lake.py" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frozen_lake_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake_analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/policy_iteration.py" beforeDir="false" afterPath="$PROJECT_DIR$/policy_iteration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/frozenlake_mapsize_vs_gameswon_p0.8.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/frozenlake_mapsize_vs_gameswon_p0.8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/frozenlake_mapsize_vs_iterations_p0.8.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/frozenlake_mapsize_vs_iterations_p0.8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/frozenlake_mapsize_vs_nsteps_p0.8.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/frozenlake_mapsize_vs_nsteps_p0.8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plots/frozenlake_mapsize_vs_traintime_p0.8.png" beforeDir="false" afterPath="$PROJECT_DIR$/plots/frozenlake_mapsize_vs_traintime_p0.8.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -195,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586035375823</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Collected stats for policy iteration">
+      <created>1586069380404</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1586069380404</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -216,19 +226,20 @@
     <MESSAGE value="Analyze Qlearning for map_p=0.9" />
     <MESSAGE value="Analyze value iteration for map_p=0.8" />
     <MESSAGE value="Done some plots" />
-    <option name="LAST_COMMIT_MESSAGE" value="Done some plots" />
+    <MESSAGE value="Collected stats for policy iteration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Collected stats for policy iteration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/frozen_lake_analysis.py</url>
-          <line>68</line>
+          <line>80</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/frozen_lake_analysis.py</url>
-          <line>102</line>
+          <line>114</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>

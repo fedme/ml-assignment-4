@@ -17,7 +17,7 @@ def mapsize_vs_gameswon(map_p=0.8):
     df['Policy Iteration'] = 100 - policyit.groupby('map_size').min()['lost_games_perc']
 
     df.plot(marker='o')
-    plt.title('Frozen Lake - Map size vs Games won')
+    plt.title(f'Frozen Lake (p={map_p}) - Map size vs Games won')
     plt.ylabel('games won (percentage)')
     plt.xlabel('map size (length of one side)')
     plt.xticks(range(4, 36, 4))
@@ -46,18 +46,30 @@ def mapsize_vs_iterations(map_p=0.8):
     policyit_mapsize_iters = policyit.iloc[policyit_idx]['max_iters']
 
     df = pd.DataFrame(index=[4, 8, 12, 16, 20, 24, 28, 32])
-    df['Q Learning'] = qlearning_mapsize_iters.tolist()
     df['Value Iteration'] = valueit_mapsize_iters.tolist()
     df['Policy Iteration'] = policyit_mapsize_iters.tolist()
 
     df.plot(marker='o')
-    plt.title('Frozen Lake - Map size vs Iterations')
+    plt.title(f'Frozen Lake (p={map_p}) - Map size vs Iterations')
     plt.ylabel('train iterations')
     plt.xlabel('map size (length of one side)')
     plt.xticks(range(4, 36, 4))
     plt.grid()
     plt.legend()
     plt.savefig(f'plots/frozenlake_mapsize_vs_iterations_p{map_p}.png')
+    plt.clf()
+
+    df = pd.DataFrame(index=[4, 8, 12, 16, 20, 24, 28, 32])
+    df['Q Learning'] = qlearning_mapsize_iters.tolist()
+
+    df.plot(marker='o')
+    plt.title(f'Frozen Lake (p={map_p}) - Map size vs Iterations (Q Learning)')
+    plt.ylabel('train iterations')
+    plt.xlabel('map size (length of one side)')
+    plt.xticks(range(4, 36, 4))
+    plt.grid()
+    plt.legend()
+    plt.savefig(f'plots/frozenlake_mapsize_vs_iterations_qlearning_p{map_p}.png')
     plt.clf()
 
 
@@ -83,7 +95,7 @@ def mapsize_vs_nsteps(map_p=0.8):
     df['Policy Iteration'] = policyit_mapsize_nsteps.tolist()
 
     df.plot(marker='o')
-    plt.title('Frozen Lake - Map size vs Mean number of steps to goal')
+    plt.title(f'Frozen Lake (p={map_p}) - Map size vs Mean number of steps to goal')
     plt.ylabel('mean number of steps to reach goal')
     plt.xlabel('map size (length of one side)')
     plt.xticks(range(4, 36, 4))
@@ -115,7 +127,7 @@ def mapsize_vs_traintime(map_p=0.8):
     df['Policy Iteration'] = policyit_mapsize_time.tolist()
 
     df.plot(marker='o')
-    plt.title('Frozen Lake - Map size vs Time required to train')
+    plt.title(f'Frozen Lake (p={map_p}) - Map size vs Time required to train')
     plt.ylabel('time required to train (seconds)')
     plt.xlabel('map size (length of one side)')
     plt.xticks(range(4, 36, 4))
@@ -128,7 +140,12 @@ def mapsize_vs_traintime(map_p=0.8):
 
 
 if __name__ == '__main__':
-    mapsize_vs_gameswon()
-    mapsize_vs_iterations()
-    mapsize_vs_nsteps()
-    mapsize_vs_traintime()
+    mapsize_vs_gameswon(map_p=0.8)
+    mapsize_vs_iterations(map_p=0.8)
+    mapsize_vs_nsteps(map_p=0.8)
+    mapsize_vs_traintime(map_p=0.8)
+
+    mapsize_vs_gameswon(map_p=0.9)
+    mapsize_vs_iterations(map_p=0.9)
+    mapsize_vs_nsteps(map_p=0.9)
+    mapsize_vs_traintime(map_p=0.9)
