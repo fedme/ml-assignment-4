@@ -2,6 +2,7 @@
 # https://github.com/dennybritz/reinforcement-learning
 
 import numpy as np
+from timeit import default_timer as timer
 
 
 def policy_eval(policy, env, discount_factor=1.0, theta=0.00001):
@@ -80,7 +81,9 @@ def policy_improvement(env, policy_eval_fn=policy_eval, discount_factor=1.0, max
         return A
 
     # Start with a random policy
+    start_time = timer()
     converged = False
+    timed_out = False
     policy = np.ones([env.nS, env.nA]) / env.nA
 
     for i in range(max_iters):
@@ -107,7 +110,16 @@ def policy_improvement(env, policy_eval_fn=policy_eval, discount_factor=1.0, max
 
         # If the policy is stable we've found an optimal policy. Return it
         if policy_stable:
+            print('CONVERGED!')
             converged = True
             break
 
-    return policy, V, converged
+        if timer() - start_time > 180:
+            print('TIMED OUT!')
+            timed_out = True
+            break
+
+    if i >= max_iters:
+        print('REACHED MAX ITERS!')
+
+    return policy, V, converged, timed_out

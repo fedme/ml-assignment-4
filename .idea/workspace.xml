@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27986bf2-7149-4bd3-9a77-db549e8a7293" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frozen_lake_analysis.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frozen_lake.py" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frozen_lake_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake_analysis.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/policy_iteration.py" beforeDir="false" afterPath="$PROJECT_DIR$/policy_iteration.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -188,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586028031228</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Done some plots">
+      <created>1586035375823</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1586035375823</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -208,29 +215,20 @@
     <MESSAGE value="Collect stats on qlearning" />
     <MESSAGE value="Analyze Qlearning for map_p=0.9" />
     <MESSAGE value="Analyze value iteration for map_p=0.8" />
-    <option name="LAST_COMMIT_MESSAGE" value="Analyze value iteration for map_p=0.8" />
+    <MESSAGE value="Done some plots" />
+    <option name="LAST_COMMIT_MESSAGE" value="Done some plots" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/frozen_lake.py</url>
-          <line>154</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/frozen_lake.py</url>
-          <line>70</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/frozen_lake_analysis.py</url>
-          <line>60</line>
+          <line>68</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/frozen_lake_analysis.py</url>
-          <line>89</line>
+          <line>102</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>

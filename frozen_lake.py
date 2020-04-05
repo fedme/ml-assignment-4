@@ -182,9 +182,9 @@ def analyze_value_iteration(map_p=0.8):
 ########################################
 
 def run_policy_iteration(env, discount_factor=0.9999, max_iters=1000):
-    optimal_policy, optimal_value_function, converged = policy_improvement(env, discount_factor=discount_factor, max_iters=max_iters)
+    optimal_policy, optimal_value_function, converged, timed_out = policy_improvement(env, discount_factor=discount_factor, max_iters=max_iters)
     optimal_policy_flat = np.where(optimal_policy == 1)[1]
-    return optimal_policy_flat, converged
+    return optimal_policy_flat, converged, timed_out
 
 
 def analyze_policy_iteration(map_p=0.8):
@@ -201,7 +201,7 @@ def analyze_policy_iteration(map_p=0.8):
             print(f'Running policy iteration for map_size={map_size} and max_iters={max_iters}...')
             env = create_env(map)
             start = timer()
-            policy, converged = run_policy_iteration(env, max_iters=max_iters)
+            policy, converged, timed_out = run_policy_iteration(env, max_iters=max_iters)
             end = timer()
             mean_number_of_steps, lost_games_perc = score_frozen_lake(env, policy)
             results.append({
@@ -209,6 +209,7 @@ def analyze_policy_iteration(map_p=0.8):
                 'map_size': map_size,
                 'max_iters': max_iters,
                 'converged': converged,
+                'timed_out': timed_out,
                 'mean_number_of_steps': mean_number_of_steps,
                 'lost_games_perc': lost_games_perc,
                 'time': end - start
