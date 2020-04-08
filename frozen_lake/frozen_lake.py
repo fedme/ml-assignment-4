@@ -3,9 +3,9 @@ import numpy as np
 from gym.envs.toy_text.frozen_lake import generate_random_map, FrozenLakeEnv
 from timeit import default_timer as timer
 
-from policy_iteration import policy_improvement
-from qlearning import q_learning
-from value_iteration import value_iteration
+from frozen_lake.policy_iteration import policy_improvement
+from frozen_lake.qlearning import q_learning
+from frozen_lake.value_iteration import value_iteration
 
 
 MAP_SIZES = [4, 8, 12, 16, 20, 24, 28, 32]

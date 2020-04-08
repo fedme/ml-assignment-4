@@ -5,7 +5,7 @@ from gym.envs.toy_text.frozen_lake import UP, RIGHT, DOWN, LEFT
 from matplotlib import colors
 from matplotlib.collections import PatchCollection
 
-from frozen_lake import load_maps, get_map, MAP_SIZES, create_env, run_policy_iteration, run_value_iteration, \
+from frozen_lake.frozen_lake import load_maps, get_map, MAP_SIZES, create_env, run_policy_iteration, run_value_iteration, \
     run_qlearning
 import matplotlib.patches as mpatches
 
