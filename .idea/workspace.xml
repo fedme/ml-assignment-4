@@ -1,59 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27986bf2-7149-4bd3-9a77-db549e8a7293" name="Default Changelist" comment="Draw policies">
-      <change afterPath="$PROJECT_DIR$/forest_management/forest_management.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen_lake/plots/policies/frozenlake_policy_iteration_8x8_p0.8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen_lake/plots/policies/frozenlake_qlearning_8x8_p0.8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frozen_lake/plots/policies/frozenlake_value_iteration_8x8_p0.8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ml-assignment-4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ml-assignment-4.iml" afterDir="false" />
+    <list default="true" id="27986bf2-7149-4bd3-9a77-db549e8a7293" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/forest_management/forest_management_analysis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forest_management/forest_management_stats.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forest_management/plots/forest_size_vs_iterations_pi_vi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forest_management/plots/forest_size_vs_iterations_ql.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forest_management/plots/forest_size_vs_time.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forest_management/plots/forest_size_vs_time_pi_vi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forest_management/plots/forest_size_vs_time_ql.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/best_maps_0.8.json" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/best_maps_0.8.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/best_maps_0.9.json" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/best_maps_0.9.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/best_maps_0.95.json" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/best_maps_0.95.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frozen_lake.py" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/frozen_lake.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frozen_lake_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/frozen_lake_analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/frozenlake_mapsize_vs_gameswon_p0.8.png" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/plots/frozenlake_mapsize_vs_gameswon_p0.8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/frozenlake_mapsize_vs_gameswon_p0.9.png" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/plots/frozenlake_mapsize_vs_gameswon_p0.9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/frozenlake_mapsize_vs_iterations_p0.8.png" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/plots/frozenlake_mapsize_vs_iterations_p0.8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/frozenlake_mapsize_vs_iterations_p0.9.png" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/plots/frozenlake_mapsize_vs_iterations_p0.9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/frozenlake_mapsize_vs_iterations_qlearning_p0.8.png" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/plots/frozenlake_mapsize_vs_iterations_qlearning_p0.8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/frozenlake_mapsize_vs_iterations_qlearning_p0.9.png" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/plots/frozenlake_mapsize_vs_iterations_qlearning_p0.9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/frozenlake_mapsize_vs_nsteps_p0.8.png" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/plots/frozenlake_mapsize_vs_nsteps_p0.8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/frozenlake_mapsize_vs_nsteps_p0.9.png" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/plots/frozenlake_mapsize_vs_nsteps_p0.9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/frozenlake_mapsize_vs_traintime_p0.8.png" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/plots/frozenlake_mapsize_vs_traintime_p0.8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/frozenlake_mapsize_vs_traintime_p0.9.png" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/plots/frozenlake_mapsize_vs_traintime_p0.9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/maps/frozenlake_map_12x12_p0.8.png" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/plots/maps/frozenlake_map_12x12_p0.8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/maps/frozenlake_map_12x12_p0.9.png" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/plots/maps/frozenlake_map_12x12_p0.9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/maps/frozenlake_map_16x16_p0.8.png" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/plots/maps/frozenlake_map_16x16_p0.8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/maps/frozenlake_map_16x16_p0.9.png" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/plots/maps/frozenlake_map_16x16_p0.9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/maps/frozenlake_map_20x20_p0.8.png" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/plots/maps/frozenlake_map_20x20_p0.8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/maps/frozenlake_map_20x20_p0.9.png" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/plots/maps/frozenlake_map_20x20_p0.9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/maps/frozenlake_map_24x24_p0.8.png" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/plots/maps/frozenlake_map_24x24_p0.8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/maps/frozenlake_map_24x24_p0.9.png" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/plots/maps/frozenlake_map_24x24_p0.9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/maps/frozenlake_map_28x28_p0.8.png" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/plots/maps/frozenlake_map_28x28_p0.8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/maps/frozenlake_map_28x28_p0.9.png" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/plots/maps/frozenlake_map_28x28_p0.9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/maps/frozenlake_map_32x32_p0.8.png" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/plots/maps/frozenlake_map_32x32_p0.8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/maps/frozenlake_map_32x32_p0.9.png" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/plots/maps/frozenlake_map_32x32_p0.9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/maps/frozenlake_map_4x4_p0.8.png" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/plots/maps/frozenlake_map_4x4_p0.8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/maps/frozenlake_map_4x4_p0.9.png" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/plots/maps/frozenlake_map_4x4_p0.9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/maps/frozenlake_map_8x8_p0.8.png" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/plots/maps/frozenlake_map_8x8_p0.8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/maps/frozenlake_map_8x8_p0.9.png" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/plots/maps/frozenlake_map_8x8_p0.9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/policies/frozenlake_policy_iteration_32x32_p0.8.png" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/plots/policies/frozenlake_policy_iteration_32x32_p0.8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/policies/frozenlake_policy_iteration_8x8_p0.8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/policies/frozenlake_qlearning_32x32_p0.8.png" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/plots/policies/frozenlake_qlearning_32x32_p0.8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/policies/frozenlake_qlearning_8x8_p0.8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/policies/frozenlake_value_iteration_32x32_p0.8.png" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/plots/policies/frozenlake_value_iteration_32x32_p0.8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plots/policies/frozenlake_value_iteration_8x8_p0.8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/policy_iteration.py" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/policy_iteration.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/policy_iteration_stats_0.8.json" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/policy_iteration_stats_0.8.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/policy_iteration_stats_0.9.json" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/policy_iteration_stats_0.9.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qlearning.py" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/qlearning.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qlearning_stats_0.8.json" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/qlearning_stats_0.8.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qlearning_stats_0.9.json" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/qlearning_stats_0.9.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/value_iteration.py" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/value_iteration.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/value_iteration_stats_0.8.json" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/value_iteration_stats_0.8.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/value_iteration_stats_0.9.json" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/value_iteration_stats_0.9.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forest_management/forest_management.py" beforeDir="false" afterPath="$PROJECT_DIR$/forest_management/forest_management.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frozen_lake/policy_iteration_stats_0.9.json" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/policy_iteration_stats_0.9.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frozen_lake/qlearning_stats_0.9.json" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/qlearning_stats_0.9.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,22 +35,24 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/forest_management" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/forest_management" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/frozen_lake" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.forest_management">
+  <component name="RunManager" selected="Python.forest_management_analysis">
     <configuration name="forest_management" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ml-assignment-4" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -106,6 +67,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/forest_management/forest_management.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="forest_management_analysis" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ml-assignment-4" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/forest_management" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/forest_management/forest_management_analysis.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -180,35 +163,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="openai_qlearning" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ml-assignment-4" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/openai_qlearning.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.forest_management_analysis" />
         <item itemvalue="Python.forest_management" />
         <item itemvalue="Python.frozen_lake_analysis" />
         <item itemvalue="Python.frozen_lake" />
         <item itemvalue="Python.frozen_lake_test" />
-        <item itemvalue="Python.openai_qlearning" />
       </list>
     </recent_temporary>
   </component>
@@ -222,7 +183,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585681969496</updated>
-      <workItem from="1586262012034" duration="8416000" />
+      <workItem from="1586262012034" duration="8598000" />
+      <workItem from="1586510135840" duration="12822000" />
     </task>
     <task id="LOCAL-00001" summary="Collect stats on qlearning">
       <created>1586017892968</created>
@@ -280,24 +242,37 @@
       <option name="project" value="LOCAL" />
       <updated>1586117441266</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Start working on forest management">
+      <created>1586378022342</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1586378022342</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Move frozen lake to subfolder">
+      <created>1586378049604</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1586378049604</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -309,58 +284,80 @@
     <MESSAGE value="Plotted for map_p=0.9" />
     <MESSAGE value="Draw maps" />
     <MESSAGE value="Draw policies" />
-    <option name="LAST_COMMIT_MESSAGE" value="Draw policies" />
+    <MESSAGE value="Start working on forest management" />
+    <MESSAGE value="Move frozen lake to subfolder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Move frozen lake to subfolder" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2788" y="291" width="860" height="854" key="CommitChangelistDialog2" timestamp="1586378022206">
+    <state x="2788" y="291" width="860" height="854" key="CommitChangelistDialog2" timestamp="1586378049506">
       <screen x="0" y="27" width="4480" height="1555" />
     </state>
-    <state x="2788" y="291" width="860" height="854" key="CommitChangelistDialog2/0.27.4480.1555@0.27.4480.1555" timestamp="1586378022206" />
-    <state width="2468" height="230" key="GridCell.Tab.0.bottom" timestamp="1586377960847">
-      <screen x="0" y="27" width="4480" height="1555" />
+    <state x="2788" y="291" width="860" height="854" key="CommitChangelistDialog2/0.27.4480.1555@0.27.4480.1555" timestamp="1586378049506" />
+    <state width="1828" height="372" key="GridCell.Tab.0.bottom" timestamp="1586538655877">
+      <screen x="0" y="502" width="1920" height="1080" />
     </state>
-    <state width="2468" height="230" key="GridCell.Tab.0.bottom/0.27.4480.1555@0.27.4480.1555" timestamp="1586377960847" />
+    <state width="2468" height="230" key="GridCell.Tab.0.bottom/0.27.4480.1555@0.27.4480.1555" timestamp="1586378169767" />
+    <state width="1828" height="372" key="GridCell.Tab.0.bottom/1920.0.2560.1440/0.502.1920.1080@0.502.1920.1080" timestamp="1586538655877" />
+    <state width="2468" height="577" key="GridCell.Tab.0.bottom/1920.0.2560.1440/0.502.1920.1080@1920.0.2560.1440" timestamp="1586513222482" />
     <state width="1828" height="528" key="GridCell.Tab.0.bottom/46.27.1874.1053@46.27.1874.1053" timestamp="1586290880147" />
-    <state width="2468" height="230" key="GridCell.Tab.0.center" timestamp="1586377960847">
-      <screen x="0" y="27" width="4480" height="1555" />
+    <state width="1828" height="372" key="GridCell.Tab.0.center" timestamp="1586538655877">
+      <screen x="0" y="502" width="1920" height="1080" />
     </state>
-    <state width="2468" height="230" key="GridCell.Tab.0.center/0.27.4480.1555@0.27.4480.1555" timestamp="1586377960847" />
+    <state width="2468" height="230" key="GridCell.Tab.0.center/0.27.4480.1555@0.27.4480.1555" timestamp="1586378169767" />
+    <state width="1828" height="372" key="GridCell.Tab.0.center/1920.0.2560.1440/0.502.1920.1080@0.502.1920.1080" timestamp="1586538655877" />
+    <state width="2468" height="577" key="GridCell.Tab.0.center/1920.0.2560.1440/0.502.1920.1080@1920.0.2560.1440" timestamp="1586513222482" />
     <state width="1828" height="528" key="GridCell.Tab.0.center/46.27.1874.1053@46.27.1874.1053" timestamp="1586290880147" />
-    <state width="2468" height="230" key="GridCell.Tab.0.left" timestamp="1586377960846">
-      <screen x="0" y="27" width="4480" height="1555" />
+    <state width="1828" height="372" key="GridCell.Tab.0.left" timestamp="1586538655877">
+      <screen x="0" y="502" width="1920" height="1080" />
     </state>
-    <state width="2468" height="230" key="GridCell.Tab.0.left/0.27.4480.1555@0.27.4480.1555" timestamp="1586377960846" />
+    <state width="2468" height="230" key="GridCell.Tab.0.left/0.27.4480.1555@0.27.4480.1555" timestamp="1586378169767" />
+    <state width="1828" height="372" key="GridCell.Tab.0.left/1920.0.2560.1440/0.502.1920.1080@0.502.1920.1080" timestamp="1586538655877" />
+    <state width="2468" height="577" key="GridCell.Tab.0.left/1920.0.2560.1440/0.502.1920.1080@1920.0.2560.1440" timestamp="1586513222481" />
     <state width="1828" height="528" key="GridCell.Tab.0.left/46.27.1874.1053@46.27.1874.1053" timestamp="1586290880146" />
-    <state width="2468" height="230" key="GridCell.Tab.0.right" timestamp="1586377960847">
-      <screen x="0" y="27" width="4480" height="1555" />
+    <state width="1828" height="372" key="GridCell.Tab.0.right" timestamp="1586538655877">
+      <screen x="0" y="502" width="1920" height="1080" />
     </state>
-    <state width="2468" height="230" key="GridCell.Tab.0.right/0.27.4480.1555@0.27.4480.1555" timestamp="1586377960847" />
+    <state width="2468" height="230" key="GridCell.Tab.0.right/0.27.4480.1555@0.27.4480.1555" timestamp="1586378169767" />
+    <state width="1828" height="372" key="GridCell.Tab.0.right/1920.0.2560.1440/0.502.1920.1080@0.502.1920.1080" timestamp="1586538655877" />
+    <state width="2468" height="577" key="GridCell.Tab.0.right/1920.0.2560.1440/0.502.1920.1080@1920.0.2560.1440" timestamp="1586513222482" />
     <state width="1828" height="528" key="GridCell.Tab.0.right/46.27.1874.1053@46.27.1874.1053" timestamp="1586290880147" />
-    <state width="2468" height="230" key="GridCell.Tab.1.bottom" timestamp="1586377960848">
-      <screen x="0" y="27" width="4480" height="1555" />
+    <state width="1828" height="372" key="GridCell.Tab.1.bottom" timestamp="1586538655878">
+      <screen x="0" y="502" width="1920" height="1080" />
     </state>
-    <state width="2468" height="230" key="GridCell.Tab.1.bottom/0.27.4480.1555@0.27.4480.1555" timestamp="1586377960848" />
+    <state width="2468" height="230" key="GridCell.Tab.1.bottom/0.27.4480.1555@0.27.4480.1555" timestamp="1586378169768" />
+    <state width="1828" height="372" key="GridCell.Tab.1.bottom/1920.0.2560.1440/0.502.1920.1080@0.502.1920.1080" timestamp="1586538655878" />
+    <state width="2468" height="577" key="GridCell.Tab.1.bottom/1920.0.2560.1440/0.502.1920.1080@1920.0.2560.1440" timestamp="1586513245047" />
     <state width="1828" height="528" key="GridCell.Tab.1.bottom/46.27.1874.1053@46.27.1874.1053" timestamp="1586290887799" />
-    <state width="2468" height="230" key="GridCell.Tab.1.center" timestamp="1586377960848">
-      <screen x="0" y="27" width="4480" height="1555" />
+    <state width="1828" height="372" key="GridCell.Tab.1.center" timestamp="1586538655878">
+      <screen x="0" y="502" width="1920" height="1080" />
     </state>
-    <state width="2468" height="230" key="GridCell.Tab.1.center/0.27.4480.1555@0.27.4480.1555" timestamp="1586377960848" />
+    <state width="2468" height="230" key="GridCell.Tab.1.center/0.27.4480.1555@0.27.4480.1555" timestamp="1586378169767" />
+    <state width="1828" height="372" key="GridCell.Tab.1.center/1920.0.2560.1440/0.502.1920.1080@0.502.1920.1080" timestamp="1586538655878" />
+    <state width="2468" height="577" key="GridCell.Tab.1.center/1920.0.2560.1440/0.502.1920.1080@1920.0.2560.1440" timestamp="1586513245047" />
     <state width="1828" height="528" key="GridCell.Tab.1.center/46.27.1874.1053@46.27.1874.1053" timestamp="1586290887799" />
-    <state width="2468" height="230" key="GridCell.Tab.1.left" timestamp="1586377960848">
-      <screen x="0" y="27" width="4480" height="1555" />
+    <state width="1828" height="372" key="GridCell.Tab.1.left" timestamp="1586538655877">
+      <screen x="0" y="502" width="1920" height="1080" />
     </state>
-    <state width="2468" height="230" key="GridCell.Tab.1.left/0.27.4480.1555@0.27.4480.1555" timestamp="1586377960848" />
+    <state width="2468" height="230" key="GridCell.Tab.1.left/0.27.4480.1555@0.27.4480.1555" timestamp="1586378169767" />
+    <state width="1828" height="372" key="GridCell.Tab.1.left/1920.0.2560.1440/0.502.1920.1080@0.502.1920.1080" timestamp="1586538655877" />
+    <state width="2468" height="577" key="GridCell.Tab.1.left/1920.0.2560.1440/0.502.1920.1080@1920.0.2560.1440" timestamp="1586513245047" />
     <state width="1828" height="528" key="GridCell.Tab.1.left/46.27.1874.1053@46.27.1874.1053" timestamp="1586290887799" />
-    <state width="2468" height="230" key="GridCell.Tab.1.right" timestamp="1586377960848">
-      <screen x="0" y="27" width="4480" height="1555" />
+    <state width="1828" height="372" key="GridCell.Tab.1.right" timestamp="1586538655878">
+      <screen x="0" y="502" width="1920" height="1080" />
     </state>
-    <state width="2468" height="230" key="GridCell.Tab.1.right/0.27.4480.1555@0.27.4480.1555" timestamp="1586377960848" />
+    <state width="2468" height="230" key="GridCell.Tab.1.right/0.27.4480.1555@0.27.4480.1555" timestamp="1586378169767" />
+    <state width="1828" height="372" key="GridCell.Tab.1.right/1920.0.2560.1440/0.502.1920.1080@0.502.1920.1080" timestamp="1586538655878" />
+    <state width="2468" height="577" key="GridCell.Tab.1.right/1920.0.2560.1440/0.502.1920.1080@1920.0.2560.1440" timestamp="1586513245047" />
     <state width="1828" height="528" key="GridCell.Tab.1.right/46.27.1874.1053@46.27.1874.1053" timestamp="1586290887799" />
     <state x="1966" y="238" width="1022" height="737" key="SettingsEditor" timestamp="1586372947994">
       <screen x="0" y="27" width="4480" height="1555" />
     </state>
     <state x="1966" y="238" width="1022" height="737" key="SettingsEditor/0.27.4480.1555@0.27.4480.1555" timestamp="1586372947994" />
     <state x="472" y="170" width="1022" height="737" key="SettingsEditor/46.27.1874.1053@46.27.1874.1053" timestamp="1586262418189" />
+    <state x="2818" y="451" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1586378051187">
+      <screen x="0" y="27" width="4480" height="1555" />
+    </state>
+    <state x="2818" y="451" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.4480.1555@0.27.4480.1555" timestamp="1586378051187" />
     <state width="1257" height="725" key="XDebugger.FullValuePopup" timestamp="1586377035970">
       <screen x="0" y="27" width="4480" height="1555" />
     </state>
@@ -373,6 +370,10 @@
       <screen x="46" y="27" width="1874" height="1053" />
     </state>
     <state x="639" y="380" key="com.intellij.ide.util.TipDialog/46.27.1874.1053@46.27.1874.1053" timestamp="1586262014167" />
+    <state x="646" y="231" key="search.everywhere.popup" timestamp="1586536590690">
+      <screen x="0" y="502" width="1920" height="1080" />
+    </state>
+    <state x="646" y="231" key="search.everywhere.popup/1920.0.2560.1440/0.502.1920.1080@0.502.1920.1080" timestamp="1586536590690" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -386,7 +387,8 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ml_assignment_4$forest_management.coverage" NAME="forest_management Coverage Results" MODIFIED="1586533834668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/forest_management" />
+    <SUITE FILE_PATH="coverage/ml_assignment_4$forest_management_analysis.coverage" NAME="forest_management_analysis Coverage Results" MODIFIED="1586538620707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/forest_management" />
     <SUITE FILE_PATH="coverage/ml_assignment_4$frozen_lake_analysis.coverage" NAME="frozen_lake_analysis Coverage Results" MODIFIED="1586262612900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ml_assignment_4$forest_management.coverage" NAME="forest_management Coverage Results" MODIFIED="1586376906138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/forest_management" />
   </component>
 </project>
