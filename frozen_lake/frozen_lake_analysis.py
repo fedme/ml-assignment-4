@@ -248,22 +248,22 @@ def draw_policy(algo='value_iteration', map_p=0.8, map_size=8):
 
 
 if __name__ == '__main__':
-    # mapsize_vs_gameswon(map_p=0.8)
-    # mapsize_vs_iterations(map_p=0.8)
-    # mapsize_vs_nsteps(map_p=0.8)
-    # mapsize_vs_traintime(map_p=0.8)
+    mapsize_vs_gameswon(map_p=0.8)
+    mapsize_vs_iterations(map_p=0.8)
+    mapsize_vs_nsteps(map_p=0.8)
+    mapsize_vs_traintime(map_p=0.8)
 
-    # mapsize_vs_gameswon(map_p=0.9)
-    # mapsize_vs_iterations(map_p=0.9)
-    # mapsize_vs_nsteps(map_p=0.9)
-    # mapsize_vs_traintime(map_p=0.9)
+    mapsize_vs_gameswon(map_p=0.9)
+    mapsize_vs_iterations(map_p=0.9)
+    mapsize_vs_nsteps(map_p=0.9)
+    mapsize_vs_traintime(map_p=0.9)
 
-    # draw_all_maps(map_p=0.8)
-    # draw_all_maps(map_p=0.9)
+    draw_all_maps(map_p=0.8)
+    draw_all_maps(map_p=0.9)
 
-    # draw_policy(algo='value_iteration', map_p=0.8, map_size=32)
-    # draw_policy(algo='policy_iteration', map_p=0.8, map_size=32)
-    # draw_policy(algo='qlearning', map_p=0.8, map_size=32)
+    draw_policy(algo='value_iteration', map_p=0.8, map_size=32)
+    draw_policy(algo='policy_iteration', map_p=0.8, map_size=32)
+    draw_policy(algo='qlearning', map_p=0.8, map_size=32)
 
     draw_policy(algo='value_iteration', map_p=0.8, map_size=8)
     draw_policy(algo='policy_iteration', map_p=0.8, map_size=8)

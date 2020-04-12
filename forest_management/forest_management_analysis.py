@@ -65,6 +65,7 @@ def size_vs_time():
 
 
 if __name__ == '__main__':
-    # size_vs_iteration()
+    size_vs_iteration()
     size_vs_time()
+
     print()

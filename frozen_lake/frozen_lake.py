@@ -223,13 +223,13 @@ def analyze_policy_iteration(map_p=0.8):
 if __name__ == '__main__':
     #find_good_maps(map_p=0.95)
 
-    # analyze_qlearning(map_p=0.8)
-    #analyze_qlearning(map_p=0.9)
+    analyze_qlearning(map_p=0.8)
+    analyze_qlearning(map_p=0.9)
 
-    # analyze_value_iteration(map_p=0.8)
+    analyze_value_iteration(map_p=0.8)
     analyze_value_iteration(map_p=0.9)
 
-    # analyze_policy_iteration(map_p=0.8)
-    # analyze_policy_iteration(map_p=0.9)
+    analyze_policy_iteration(map_p=0.8)
+    analyze_policy_iteration(map_p=0.9)
 
     print()

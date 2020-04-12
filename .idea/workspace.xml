@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27986bf2-7149-4bd3-9a77-db549e8a7293" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/forest_management/forest_management_analysis.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forest_management/forest_management_stats.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forest_management/plots/forest_size_vs_iterations_pi_vi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forest_management/plots/forest_size_vs_iterations_ql.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forest_management/plots/forest_size_vs_time.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forest_management/plots/forest_size_vs_time_pi_vi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forest_management/plots/forest_size_vs_time_ql.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fmeini3-analysis.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forest_management/plots/policies.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forest_management/forest_management.py" beforeDir="false" afterPath="$PROJECT_DIR$/forest_management/forest_management.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frozen_lake/policy_iteration_stats_0.9.json" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/policy_iteration_stats_0.9.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frozen_lake/qlearning_stats_0.9.json" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/qlearning_stats_0.9.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forest_management/forest_management_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/forest_management/forest_management_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frozen_lake/frozen_lake.py" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/frozen_lake.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frozen_lake/frozen_lake_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/frozen_lake/frozen_lake_analysis.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +180,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585681969496</updated>
       <workItem from="1586262012034" duration="8598000" />
-      <workItem from="1586510135840" duration="12822000" />
+      <workItem from="1586510135840" duration="22572000" />
     </task>
     <task id="LOCAL-00001" summary="Collect stats on qlearning">
       <created>1586017892968</created>
@@ -256,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586378049604</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Collect stats and plots for forest manegement">
+      <created>1586538685210</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1586538685210</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,13 +289,15 @@
     <MESSAGE value="Draw policies" />
     <MESSAGE value="Start working on forest management" />
     <MESSAGE value="Move frozen lake to subfolder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Move frozen lake to subfolder" />
+    <MESSAGE value="Collect stats and plots for forest manegement" />
+    <option name="LAST_COMMIT_MESSAGE" value="Collect stats and plots for forest manegement" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2788" y="291" width="860" height="854" key="CommitChangelistDialog2" timestamp="1586378049506">
-      <screen x="0" y="27" width="4480" height="1555" />
+    <state x="707" y="263" width="912" height="594" key="CommitChangelistDialog2" timestamp="1586538685102">
+      <screen x="0" y="502" width="1920" height="1080" />
     </state>
     <state x="2788" y="291" width="860" height="854" key="CommitChangelistDialog2/0.27.4480.1555@0.27.4480.1555" timestamp="1586378049506" />
+    <state x="707" y="263" width="912" height="594" key="CommitChangelistDialog2/1920.0.2560.1440/0.502.1920.1080@0.502.1920.1080" timestamp="1586538685102" />
     <state width="1828" height="372" key="GridCell.Tab.0.bottom" timestamp="1586538655877">
       <screen x="0" y="502" width="1920" height="1080" />
     </state>
@@ -349,15 +354,20 @@
     <state width="1828" height="372" key="GridCell.Tab.1.right/1920.0.2560.1440/0.502.1920.1080@0.502.1920.1080" timestamp="1586538655878" />
     <state width="2468" height="577" key="GridCell.Tab.1.right/1920.0.2560.1440/0.502.1920.1080@1920.0.2560.1440" timestamp="1586513245047" />
     <state width="1828" height="528" key="GridCell.Tab.1.right/46.27.1874.1053@46.27.1874.1053" timestamp="1586290887799" />
+    <state x="2939" y="398" width="558" height="640" key="RollbackChangesDialog" timestamp="1586593058144">
+      <screen x="1920" y="0" width="2560" height="1440" />
+    </state>
+    <state x="2939" y="398" width="558" height="640" key="RollbackChangesDialog/1920.0.2560.1440/0.502.1920.1080@1920.0.2560.1440" timestamp="1586593058144" />
     <state x="1966" y="238" width="1022" height="737" key="SettingsEditor" timestamp="1586372947994">
       <screen x="0" y="27" width="4480" height="1555" />
     </state>
     <state x="1966" y="238" width="1022" height="737" key="SettingsEditor/0.27.4480.1555@0.27.4480.1555" timestamp="1586372947994" />
     <state x="472" y="170" width="1022" height="737" key="SettingsEditor/46.27.1874.1053@46.27.1874.1053" timestamp="1586262418189" />
-    <state x="2818" y="451" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1586378051187">
-      <screen x="0" y="27" width="4480" height="1555" />
+    <state x="1208" y="708" width="516" height="372" key="Vcs.Push.Dialog.v2" timestamp="1586538707446">
+      <screen x="0" y="502" width="1920" height="1080" />
     </state>
     <state x="2818" y="451" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.4480.1555@0.27.4480.1555" timestamp="1586378051187" />
+    <state x="1208" y="708" width="516" height="372" key="Vcs.Push.Dialog.v2/1920.0.2560.1440/0.502.1920.1080@0.502.1920.1080" timestamp="1586538707446" />
     <state width="1257" height="725" key="XDebugger.FullValuePopup" timestamp="1586377035970">
       <screen x="0" y="27" width="4480" height="1555" />
     </state>
